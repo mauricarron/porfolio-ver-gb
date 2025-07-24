@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+import "@fontsource/geist-mono";
+---
+
+<html lang="en" class="bg-black text-neutral-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Mauricio David Carron ~/ Software Engineer</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Geist Mono", font-mono;
+  }
+</style>
