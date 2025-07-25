@@ -7,6 +7,16 @@
   --color-gb-100: #b0c0a0;
 }
 
+@layer utilities {
+  .pixelated {
+    image-rendering: pixelated;
+  }
+}
+
 ::selection {
   @apply bg-gb-100 text-gb-400;
+}
+
+:focus {
+  @apply ring-2 ring-gb-100 outline-none;
 }
