@@ -1,0 +1,41 @@
+---
+import type { Project } from "@/types/projects";
+import ProjectLink from "./ui/ProjectLink.astro";
+import Icon from "./ui/Icon.astro";
+
+type Props = Project;
+
+const { title, isWip, description, techStack, links } = Astro.props;
+---
+
+<div class="p-3 border rounded-none border-neutral-800 flex flex-col gap-3">
+  <div class="flex flex-row flex-nowrap">
+    <div class="flex flex-row flex-nowrap gap-2 items-baseline mr-auto">
+      <h3 class="text-xs text-white uppercase">{title}</h3>
+      {isWip && <p>w.i.p</p>}
+    </div>
+    <div class="flex flex-row flex-nowrap gap-6">
+      {
+        Object.entries(links).map(([name, link]) => (
+          <ProjectLink href={link} target="_blank">
+            <Icon name={name} />
+            <span class="uppercase">{name}</span>
+          </ProjectLink>
+        ))
+      }
+    </div>
+  </div>
+  <p>{description}</p>
+  <div class="flex flex-row flex-nowrap gap-2">
+    <Icon name="code-stack" class="mt-0.5 text-neutral-600" />
+    <ul class="flex flex-row gap-3 flex-wrap">
+      {
+        techStack.map((tech) => (
+          <li class="text-[10px] text-neutral-600 uppercase whitespace-nowrap">
+            {tech}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

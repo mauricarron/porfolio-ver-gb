@@ -1,0 +1,13 @@
+---
+import { Picture } from "astro:assets";
+import PFP from "@/assets/images/gb-pallete-portrait@128px.png";
+---
+
+<section>
+  <Picture
+    src={PFP}
+    alt="Mauri's portrait in a Gameboy camera style"
+    formats={["webp", "png"]}
+    class="aspect-square pixelated"
+  />
+</section>

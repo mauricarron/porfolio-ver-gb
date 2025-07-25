@@ -1,4 +1,8 @@
 ---
+type Prop = {
+  name: string;
+} & HTMLAttributes<"svg">;
+
 const { name, ...props } = Astro.props;
 
 import Link from "@/assets/icons/link.svg";
@@ -8,27 +12,31 @@ import Github from "@/assets/icons/github.svg";
 import Figma from "@/assets/icons/figma.svg";
 import LinkedIn from "@/assets/icons/linkedin.svg";
 import NPM from "@/assets/icons/npm.svg";
+import type { HTMLAttributes } from "astro/types";
 
 type IconName =
-  | "Link"
-  | "Live"
-  | "CodeStack"
-  | "Github"
-  | "Figma"
-  | "LinkedIn"
-  | "NPM"
-  | "CodeStack";
+  | "link"
+  | "live"
+  | "github"
+  | "code"
+  | "figma"
+  | "design"
+  | "linkedin"
+  | "npm"
+  | "code-stack";
 
 const icons: Record<IconName, any> = {
-  Link,
-  Live,
-  CodeStack,
-  Github,
-  Figma,
-  LinkedIn,
-  NPM,
+  link: Link,
+  live: Live,
+  "code-stack": CodeStack,
+  github: Github,
+  code: Github,
+  figma: Figma,
+  design: Figma,
+  linkedin: LinkedIn,
+  npm: NPM,
 };
 const IconSVG = icons[name as IconName];
 ---
 
-{IconSVG ? <IconSVG {...props} /> : null}
+{IconSVG ? <IconSVG class="inline-block" {...props} /> : null}

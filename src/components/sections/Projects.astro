@@ -1,0 +1,19 @@
+---
+import { projectData } from "@/assets/data";
+import ProjectCard from "../ProjectCard.astro";
+---
+
+<section class="flex flex-col gap-3">
+  <h2 class="uppercase text-xs">Projects</h2>
+  {
+    projectData.map((project) => (
+      <ProjectCard
+        title={project.title}
+        isWip={project.isWip}
+        description={project.description}
+        techStack={project.techStack}
+        links={project.links}
+      />
+    ))
+  }
+</section>

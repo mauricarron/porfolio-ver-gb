@@ -1,11 +1,20 @@
 ---
-import Link from "@/components/ui/Link.astro";
+import Bio from "@/components/sections/Bio.astro";
+import Footer from "@/components/sections/Footer.astro";
+import Portrait from "@/components/sections/Portrait.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Title from "@/components/sections/Title.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="mx-auto w-full max-w-lg flex flex-col py-12 px-3 gap-12">
-    <h1 class="text-4xl font-bold">Let's start</h1>
-    <Link href="#">some text that has a link in here</Link>
-  </main>
+  <div class="mx-auto w-full max-w-lg flex flex-col py-12 px-3 gap-12">
+    <main class="flex flex-col gap-12">
+      <Portrait />
+      <Title />
+      <Bio />
+      <Projects />
+    </main>
+    <Footer />
+  </div>
 </Layout>
