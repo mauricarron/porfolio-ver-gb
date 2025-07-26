@@ -53,7 +53,7 @@ export const projectData: Project[] = [
     title: "Kobuta Expenses",
     isWip: false,
     description:
-      "Home expense tracker I built to fit my own budget habits and fiscal situation. Nothing fancy — just what I needed, done right.",
+      "Home expense tracker I built to fit my own budget habits and fiscal situation. Nothing fancy — just what I needed.",
     techStack: [
       "Next.js",
       "Typescript",
