@@ -1,4 +1,5 @@
 ---
+import { personalLinks } from "@/assets/data";
 import Icon from "../ui/Icon.astro";
 import Link from "../ui/Link.astro";
 ---
@@ -10,7 +11,7 @@ import Link from "../ui/Link.astro";
     Working remotely from Neuquén, Argentina.
   </p>
   <p>
-    Currently working at <Link href="https://mechanized.ai"
+    Currently working at <Link href="https://mechanized.ai" target="_blank"
       >Mechanized AI <Icon name="link" /></Link
     >, where we're using AI to help companies modernize legacy codebases.
   </p>
@@ -18,7 +19,12 @@ import Link from "../ui/Link.astro";
     In my free time, I explore game design and dev. Right now, I'm diving into
     monorepos and reading <Link
       href="https://www.amazon.com/Full-Stack-Tao-Practical-software-Programming-ebook/dp/B0DTYDDS6Z"
-      }>Full Stack Tao <Icon name="link" /></Link
+      target="_blank">Full Stack Tao <Icon name="link" /></Link
     > by Alex Kondov.
+  </p>
+  <p>
+    Let’s connect on <Link href={personalLinks.linkedin} target="_blank"
+      >LinkedIn <Icon name="link" /></Link
+    >.
   </p>
 </section>

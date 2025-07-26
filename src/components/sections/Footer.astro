@@ -1,19 +1,20 @@
 ---
+import { personalLinks } from "@/assets/data";
 import Icon from "../ui/Icon.astro";
 import Link from "../ui/Link.astro";
 ---
 
 <footer class="flex flex-row justify-start gap-12">
   <pre
-    class="text-wrap">Design and coded by Mauri, view source code at <Link href="https://github.com/mauri" target="_blank">GitHub <Icon name="link" /></Link></pre>
+    class="text-wrap">Design and coded by Mauri, view source code at <Link href={personalLinks.projectSource} target="_blank">GitHub <Icon name="link" /></Link></pre>
   <ul>
     <li class="text-nowrap text-right">
-      <Link href="https://twitter.com/mauri" target="_blank"
+      <Link href={personalLinks.linkedin} target="_blank"
         >LinkedIn <Icon name="link" /></Link
       >
     </li>
     <li class="text-nowrap text-right">
-      <Link href="https://github.com/mauri" target="_blank"
+      <Link href={personalLinks.github} target="_blank"
         >GitHub <Icon name="link" /></Link
       >
     </li>

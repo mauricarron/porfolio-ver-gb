@@ -16,7 +16,8 @@ export const projectData: Project[] = [
       "Mantine UI",
     ],
     links: {
-      design: "#",
+      design:
+        "https://www.figma.com/design/6ZO0JNou1cq1vvbfcw1JO0/noichigo?node-id=1-6506&t=5JLWbLfbHBRhAWY1-1",
     },
   },
   {
@@ -33,8 +34,9 @@ export const projectData: Project[] = [
       "Vercel",
     ],
     links: {
-      live: "#",
-      design: "#",
+      live: "https://www.fitnologym.com.ar/",
+      design:
+        "https://www.figma.com/design/X4SDnt973oTz39VcxwFbnU/Fitnologym?node-id=1-11669&t=fffqDrF68ypQo8Kd-1",
     },
   },
   {
@@ -44,8 +46,7 @@ export const projectData: Project[] = [
       "Tiny utility written in TypeScript for sending Telegram messages. It's for those moments when email is too much, but silence is too risky.",
     techStack: ["Bun.js", "Typescript", "Telegram", "NPM"],
     links: {
-      npm: "#",
-      code: "#",
+      npm: "https://www.npmjs.com/package/wasabi-alert",
     },
   },
   {
@@ -63,7 +64,14 @@ export const projectData: Project[] = [
       "Vercel",
     ],
     links: {
-      design: "#",
+      design:
+        "https://www.figma.com/design/pf3aOY8nbEPCT4hzfOmurE/kobuta-expenses?node-id=1-801&t=3SFVq8T5dhgkdf27-1",
     },
   },
 ];
+
+export const personalLinks = {
+  projectSource: "https://github.com/mauricarron/porfolio-ver-gb",
+  github: "https://github.com/mauricarron",
+  linkedin: "https://www.linkedin.com/in/mauricarron/",
+};
