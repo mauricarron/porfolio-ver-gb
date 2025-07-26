@@ -1,5 +1,45 @@
 import type { Project } from "@/types/projects";
 
+export const metadata = {
+  title: "Mauricio Carron - Software Engineer",
+  description:
+    "I'm a software engineer who builds with taste. I'm not a designer, but I act like one when it counts — focused on how things look, work, and feel to use.",
+  openGraph: {
+    title: "Mauricio Carron - Software Engineer",
+    description:
+      "I'm a software engineer who builds with taste. I'm not a designer, but I act like one when it counts — focused on how things look, work, and feel to use.",
+    type: "website",
+    url: "https://mauricarron.dev",
+  },
+  ogImage: "/assets/images/og-image.png",
+  author: "Mauricio Carron",
+  siteUrl: "https://mauricarron.dev",
+  keywords: [
+    "Mauricio Carron",
+    "Software Engineer",
+    "Full Stack Developer",
+    "Web Development",
+    "Frontend Developer",
+    "Backend Developer",
+    "Typescript",
+    "Next.js",
+    "React",
+    "Node.js",
+    "Shadcn/ui",
+    "Tailwind",
+    "Mongo DB",
+    "Mongoose",
+    "Vercel",
+    "Bun.js",
+    "Telegram",
+    "NPM",
+    "Mantine UI",
+    "Monorepo",
+    "SQLite",
+    "Prisma",
+  ],
+};
+
 export const projectData: Project[] = [
   {
     title: "Noichigo",
