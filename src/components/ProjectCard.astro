@@ -11,7 +11,7 @@ const { title, isWip, description, techStack, links } = Astro.props;
 <div class="p-3 border rounded-none border-neutral-800 flex flex-col gap-3">
   <div class="flex flex-row flex-nowrap">
     <div class="flex flex-row flex-nowrap gap-2 items-baseline mr-auto">
-      <h3 class="text-xs text-white uppercase">{title}</h3>
+      <h3 class="text-xs md:text-sm text-white uppercase">{title}</h3>
       {isWip && <p>w.i.p</p>}
     </div>
     <div class="flex flex-row flex-nowrap gap-6">
@@ -27,11 +27,11 @@ const { title, isWip, description, techStack, links } = Astro.props;
   </div>
   <p>{description}</p>
   <div class="flex flex-row flex-nowrap gap-2">
-    <Icon name="code-stack" class="mt-0.5 text-neutral-600" />
+    <Icon name="code-stack" class="mt-0.5 md:mt-1.5 text-neutral-600" />
     <ul class="flex flex-row gap-3 flex-wrap">
       {
         techStack.map((tech) => (
-          <li class="text-[10px] text-neutral-600 uppercase whitespace-nowrap">
+          <li class="text-xs md:text-sm text-neutral-600 uppercase whitespace-nowrap">
             {tech}
           </li>
         ))

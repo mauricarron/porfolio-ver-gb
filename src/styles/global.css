@@ -20,3 +20,7 @@
 :focus {
   @apply ring-2 ring-gb-100 outline-none;
 }
+
+.debug {
+  @apply border-red-500 bg-red-500/5;
+}
