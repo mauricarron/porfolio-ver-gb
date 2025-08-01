@@ -1,4 +1,6 @@
 ---
+import Analytics from "@vercel/analytics/astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
 import { metadata } from "@/assets/data";
 import "../styles/global.css";
 import "@fontsource/geist-mono";
@@ -29,6 +31,8 @@ import "@fontsource/geist-mono";
   </head>
   <body class="m-0 w-full min-h-screen text-sm md:text-base antialiased">
     <slot />
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>
 
