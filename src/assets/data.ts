@@ -83,10 +83,11 @@ export const projectData: Project[] = [
     title: "Wasabi Alert",
     isWip: false,
     description:
-      "Tiny utility written in TypeScript for sending Telegram messages. It's for those moments when email is too much, but silence is too risky.",
+      "Vibe-coded a tiny utility written in TypeScript for sending Telegram messages. It's for those moments when email is too much, but silence is too risky.",
     techStack: ["Bun.js", "Typescript", "Telegram", "NPM"],
     links: {
       npm: "https://www.npmjs.com/package/wasabi-alert",
+      code: "https://github.com/mauricarron/wasabi-alert",
     },
   },
   {
